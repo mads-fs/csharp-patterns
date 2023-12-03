@@ -28,9 +28,10 @@
             SystemEvents.GameEnd += GameEnd;
 
             
-            int potionAmount = new Random(rngSeed).Next(0, 4);
+            uint potionAmount = (uint)new Random(rngSeed).Next(0, 4);
             Unit player = unitMap.First(x => x.Value is Player).Value;
             ((Potion)this.potion).Target = player.Id;
+            if(potionAmount > 0) GameEvents.OnItemReceived(player.Id, potion, potionAmount);
             for(int count = 0; count < potionAmount; count++)
             {
                 player.AddItemToInventory(potion);

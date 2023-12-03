@@ -21,6 +21,7 @@ namespace Mediator
             Task sim = Task.Run(() => Start());
             while (!sim.IsCompleted) ;
             // Pause Console before exiting
+            Console.WriteLine("Press Enter to Exit...");
             Console.ReadLine();
         }
 
