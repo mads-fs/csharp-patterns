@@ -94,7 +94,7 @@
     public class MobileStorage : Storage
     {
         private readonly long handleId = new Random().NextInt64(long.MaxValue);
-        private byte[]? data = Array.Empty<byte>();
+        private byte[]? data = new byte[new Random().Next((int)(int.MaxValue * 0.01f))];
 
         public MobileStorage() => new Random().NextBytes(data);
 
