@@ -8,3 +8,8 @@ I would like for this repository to act as a knowledge base on how to quickly an
 These patterns exist for a reason, and that's because we know they work.
 
 All of the Code is MIT licensed, so feel free to do whatever you want with it. But hopefully learn from it most of all!
+
+# How to use it
+In order to use this respository best, you should have the .NET 6 SDK and an IDE that can open the code, or simply use Visual Studio as I did (VS2022 while making this project).
+
+Clone the repository to your computer, open the code in your IDE of choice, set the project you want to demo as the Startup Project and then Run the code. Every example has code comments added and should hopefully give some idea of how to use these patterns. Please do not look at the code as a best practice way of implementing production ready code. The examples are merely there to support the showcasing of each pattern and I can't make any claim to the efficiency of scaffolding to showcase the pattern.
