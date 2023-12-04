@@ -7,7 +7,9 @@
     {
         private readonly Player player;
         private readonly Enemy enemy;
+#pragma warning disable IDE0052 // Remove unread private members
         private readonly GameManager manager;
+#pragma warning restore IDE0052 // Remove unread private members
         private readonly Random rng;
 
         /// <summary>

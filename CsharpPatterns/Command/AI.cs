@@ -6,7 +6,7 @@
     /// </summary>
     public static class AI
     {
-        private static readonly Random rng = new Random(0);
+        private static readonly Random rng = new(0);
         public static (int, int) GetMove()
         {
             int[,] boardState = Program.BoardInstance.State;

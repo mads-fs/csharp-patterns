@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace Mediator
+﻿namespace Mediator
 {
     /// <summary>
     /// The Mediator Pattern is useful when there are a bunch of components or objects
