@@ -1,4 +1,6 @@
-﻿namespace Factory
+﻿#pragma warning disable CA1822 // Mark members as static
+
+namespace Factory
 {
     /// <summary>
     /// This class represents an imaginary Game Console's storage API for the purposes of the Factory Example.
@@ -14,9 +16,7 @@
                 RequestType = request.RequestType
             };
 
-#pragma warning disable CA1822 // Mark members as static
         private void Log(string operation, Guid handle, string message) => Console.WriteLine($"[{operation}|{handle}] {message}");
-#pragma warning restore CA1822 // Mark members as static
 
         public void Save(StoragePermissionResponse? permission)
         {

@@ -1,4 +1,7 @@
-﻿namespace Singleton
+﻿#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+#pragma warning disable IDE0074 // Use compound assignment
+
+namespace Singleton
 {
     /// <summary>
     /// This implementation is thread-safe and works in multithreaded environments.
@@ -32,13 +35,9 @@
             sessionId = rng.Next();
         }
 
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
-
         // This is the actual instance of the GameManager we will
         // be operating on.
         private static GameManagerThreadSafe instance;
-
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
         // This is how code will access the instance.
         // There are multiple ways to do this. This is
