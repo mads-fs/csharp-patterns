@@ -1,4 +1,6 @@
-﻿namespace Mediator
+﻿#pragma warning disable IDE0052 // Remove unread private members
+
+namespace Mediator
 {
     /// <summary>
     /// This class represents a very simplistic and barebones Game Engine Simulation
@@ -7,9 +9,7 @@
     {
         private readonly Player player;
         private readonly Enemy enemy;
-#pragma warning disable IDE0052 // Remove unread private members
         private readonly GameManager manager;
-#pragma warning restore IDE0052 // Remove unread private members
         private readonly Random rng;
 
         /// <summary>
